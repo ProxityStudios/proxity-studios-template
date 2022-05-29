@@ -10,7 +10,10 @@
 		"format": "prettier --write src/**/*.ts",
 		"pq": "pretty-quick",
 		"update": "yarn upgrade-interactive",
-		"sversion": "standard-version"
+		"sversion": "standard-version",
+		"build": "tsc -b src",
+		"clean": "tsc -b src --clean",
+		"watch": "tsc -b src -w"
 	},
 	"devDependencies": {
 		"eslint": "^8.16.0",
